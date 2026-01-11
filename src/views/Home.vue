@@ -50,7 +50,7 @@ const copyEmail = async () => {
         <div class="w-400 mx-auto">
             <!--About Me-->
             <div class="w-full flex justify-center">
-                <div class="border border-5 w-80 text-center text-4xl p-7 font-bold">
+                <div class="border border-5 w-80 text-center text-4xl p-7 font-bold scroll-mt-24" id="aboutme">
                     <p>ABOUT ME</p>
                 </div>
             </div>
@@ -73,7 +73,7 @@ const copyEmail = async () => {
                 </p>
             </div>
             <!--Project section-->
-            <div class="mt-16 md:mt-24 lg:mt-32 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 "
+            <div class="mt-16 md:mt-24 lg:mt-32 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 scroll-mt-24"
                 id="project">
                 <div class="w-full flex justify-center">
                     <div class="border border-5 w-80 text-center text-4xl p-7 font-bold">
@@ -93,10 +93,11 @@ const copyEmail = async () => {
                 </div>
             </div>
             <!--Skills Grid-->
-            <div class="grid grid-cols-1 gap-4 sm:grids-cols-2 lg:grid-cols-3 xl:grid-cols-5 sm:gap-6 lg:gap-8 mt-8 md:mt-10">
+            <div
+                class="grid grid-cols-1 gap-4 sm:grids-cols-2 lg:grid-cols-3 xl:grid-cols-5 sm:gap-6 lg:gap-8 mt-8 md:mt-10">
                 <!--Languages-->
-                <div class="mt-10 border border-black text-center">
-                    <div class="border border-b border-black p-3 text-lg sm:text-xl font-semibold">Lanjuages</div>
+                <div class="mt-10 border border-black-300 text-center">
+                    <div class="border border-b border-black-300 p-3 text-lg sm:text-xl font-semibold">Lanjuages</div>
                     <div class="text-base sm:text-lg md:text-xl p-4 space-y-2">
                         <p>C# (OOP)</p>
                         <p>C</p>
@@ -106,20 +107,45 @@ const copyEmail = async () => {
                     </div>
 
                 </div>
+                <!--Database-->
+                <div class="mt-10 border border-black-300 text-center">
+                    <div class="border border-b border-black-300 p-3 text:lg sm:text-xl font-semibold">
+                        Database<br />(Learning)</div>
+                    <div class="text-base sm:text-lg md:text-xl p-4 space-y-2">
+                        <p>SQL</p>
+                        <p>MySQL</p>
+                        <p>SQLite</p>
+                    </div>
+                </div>
                 <!--Tools-->
-                <div class="mt-10 border border-black text-center">
-                    <div class="border border-b border-black p-3 text-lg sm:text-xl font-semibold">Frameworks</div>
+                <div class="mt-10 border border-black-300 text-center">
+                    <div class="border border-b border-black-300 p-3 text-lg sm:text-xl font-semibold">Tools</div>
+                    <div class="text-base sm:text-lg md:text-xl p-4 space-y-2">
+                        <p>SQL</p>
+                        <p>Git</p>
+                        <p>Figma</p>
+                        <p>Postman</p>
+                        <p>Tailwind CSS (Fully responsive)</p>
+                    </div>
+                </div>
+                <!--Frameworks-->
+                <div class="mt-10 border border-black-300 text-center">
+                    <div class="border border-b border-black-300 p-3 text:lg sm:text-xl font-semibold">Frameworks</div>
                     <div class="text-base sm:text-lg md:text-xl p-4 space-y-2">
                         <p>Vue.js</p>
                         <p>Nuxt.js</p>
                         <p>React.js<br />(Learning)</p>
                     </div>
                 </div>
+                <!--Other-->
+                <div class="mt-10 border border-black-300 text-center">
+                    <div class="border border-b border-black-300 p-3 text-lg sm:text-xl font-semibold">Other</div>
+                    <div class="text-base sm:text-lg md:text-xl p-4 space-y-2">
+                        <p>Node.js</p>
+                        <p>Express.js</p>
+                    </div>
+                </div>
             </div>
-
         </div>
-
-
     </Navbar>
-
 </template>

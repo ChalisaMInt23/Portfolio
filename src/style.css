@@ -6,3 +6,12 @@ body {
   font-family: "Dancing Script", cursive;
 
 }
+html {
+  scroll-behavior: smooth;
+}
+.nav-btn {
+  @apply text-[#6d6e70] hover:text-white transition;
+}
+.mobile-nav {
+  @apply text-lg text-white hover:text-[#C778DD] transition;
+}
