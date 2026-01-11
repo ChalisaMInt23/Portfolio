@@ -55,7 +55,7 @@ const copyEmail = async () => {
 
 
         <!-- CONTENT -->
-        <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-black">
 
             <!-- ABOUT ME -->
             <div class="flex justify-center mt-24 scroll-mt-24" id="aboutme">
@@ -100,7 +100,7 @@ const copyEmail = async () => {
                gap-6 mt-10">
                 <div class="border text-center">
                     <div class="border-b p-3 font-semibold">Languages</div>
-                    <div class="p-4 space-y-2">
+                    <div class=" p-4 space-y-2">
                         <p>C# (OOP)</p>
                         <p>C</p>
                         <p>C++</p>
@@ -111,7 +111,7 @@ const copyEmail = async () => {
 
                 <div class="border text-center">
                     <div class="border-b p-3 font-semibold">Database</div>
-                    <div class="p-4 space-y-2">
+                    <div class="text-gray p-4 space-y-2">
                         <p>SQL</p>
                         <p>MySQL</p>
                         <p>SQLite</p>
