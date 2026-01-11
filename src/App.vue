@@ -1,12 +1,11 @@
 <script setup>
-import { RouterView } from 'vue-router';
-
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <div class="bg-[#d7d7d8]">
+    <div class="min-h-screen bg-animated-gradient">
+    <!-- CONTENT -->
     <RouterView />
-
   </div>
-
 </template>
+

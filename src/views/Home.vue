@@ -2,7 +2,6 @@
 import Navbar from '../components/Navbar.vue'
 import email from '../components/email.vue'
 import github from '../components/github.vue'
-import heroBg from '../assets/entrepreneur-etc.png'
 
 const Email = 'mintkung23@gmail.com'
 
@@ -14,15 +13,17 @@ const copyEmail = async () => {
 
 <template>
     <Navbar>
-        <!-- HERO SECTION -->
-        <section class="min-h-screen w-full bg-cover bg-center" :style="{ backgroundImage: `url(${heroBg})` }">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
-               flex flex-col lg:flex-row
-               items-center justify-center
-               gap-12 pt-32">
+        <section class="relative w-full flex items-center min-h-[calc(100vh-80px)] -mt-4 overflow-hidden">
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+           flex flex-col lg:flex-row
+           items-center justify-center
+           gap-12">
+                <!-- Animated Background -->
+                <div class="absolute inset-0 animated-bg"></div>
+
                 <!-- TEXT -->
                 <div class="w-full lg:w-1/2 text-center lg:text-left">
-                    <h2 class="text-[#52565e] text-3xl sm:text-4xl lg:text-5xl font-medium">
+                    <h2 class="text-[#52565e] text-3xl sm:text-4xl lg:text-5xl font-medium mt-10">
                         Hi, I am
                     </h2>
 
@@ -36,22 +37,22 @@ const copyEmail = async () => {
                         Junior Fullstack Developer.
                     </p>
 
-                    <!-- SOCIAL -->
                     <div class="flex justify-center lg:justify-start gap-6 mt-8">
-                        <email @click="copyEmail" class="cursor-pointer w-8 h-8 sm:w-10 sm:h-10" />
+                        <email @click="copyEmail" class="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" />
                         <a href="https://github.com/ChalisaMInt23" target="_blank">
-                            <github class="cursor-pointer w-8 h-8 sm:w-10 sm:h-10" />
+                            <github class="w-8 h-8 sm:w-10 sm:h-10 cursor-pointer" />
                         </a>
                     </div>
                 </div>
 
                 <!-- IMAGE -->
-                <div class="w-full lg:w-1/2 flex justify-center">
-                    <img src="../assets/Profile.png" alt="Profile"
-                        class="w-48 sm:w-64 lg:w-80 rounded-full object-cover" />
+                <div class="w-full lg:w-1/2 flex justify-center md:mt-10 xl:mt-10">
+                    <img src="../assets/Profile.png" class="w-48 sm:w-64 lg:w-80 rounded-full object-cover" />
                 </div>
             </div>
         </section>
+
+
 
         <!-- CONTENT -->
         <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

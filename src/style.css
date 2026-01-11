@@ -3,15 +3,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 body {
-  font-family: "Dancing Script", cursive;
+  font-family: "Roboto Mono", monospace;
 
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 .nav-btn {
   @apply text-[#6d6e70] hover:text-white transition;
 }
+
 .mobile-nav {
   @apply text-lg text-white hover:text-[#C778DD] transition;
+}
+
+.bg-animated-gradient {
+  background: linear-gradient(120deg,
+      #f1d3bd,
+      #f7c8d0,
+      #e6d8f5,
+      #f1d3bd);
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
